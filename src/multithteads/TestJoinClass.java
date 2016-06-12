@@ -1,11 +1,11 @@
 package multithteads;
+
 import java.util.*;
 
 public class TestJoinClass implements Runnable {
 	@Override
 	public void run() {
-		System.out.println("JoinClass.run() "
-		+ Calendar.getInstance().getTime());
+		System.out.println("JoinClass.run() " + Calendar.getInstance().getTime());
 		try {
 			Thread.sleep(5000L);
 		} catch (InterruptedException e) {

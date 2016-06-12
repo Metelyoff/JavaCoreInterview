@@ -3,8 +3,8 @@ package multithteads;
 public class JoinClass implements Runnable {
 	@Override
 	public void run() {
-		for (int i=0; i<100; i++) {
-			if(!Thread.interrupted()) {
+		for (int i = 0; i < 100; i++) {
+			if (!Thread.interrupted()) {
 				System.out.println(i);
 				try {
 					Thread.sleep(100);

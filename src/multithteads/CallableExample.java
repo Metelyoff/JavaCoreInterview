@@ -1,23 +1,26 @@
 package multithteads;
+
 import java.util.concurrent.*;
 import java.util.*;
 
 public class CallableExample {
 	public static class WordLengthCallable implements Callable<Integer> {
 		private String word;
+
 		public WordLengthCallable(String word) {
 			this.word = word;
 		}
+
 		public Integer call() {
 			return Integer.valueOf(word.length());
 		}
 	}
-	
+
 	public static void main(String args[]) throws Exception {
-		String[] words={"100","2000","30000"};
+		String[] words = { "100", "2000", "30000" };
 		ExecutorService pool = Executors.newFixedThreadPool(3);
 		Set<Future<Integer>> set = new HashSet<Future<Integer>>();
-		for (String word: words) {
+		for (String word : words) {
 			Callable<Integer> callable = new WordLengthCallable(word);
 			Future<Integer> future = pool.submit(callable);
 			set.add(future);
@@ -27,6 +30,6 @@ public class CallableExample {
 			sum += future.get();
 		}
 		System.out.printf("The sum of lengths is %s%n", sum);
-		//System.exit(sum);
+		// System.exit(sum);
 	}
 }

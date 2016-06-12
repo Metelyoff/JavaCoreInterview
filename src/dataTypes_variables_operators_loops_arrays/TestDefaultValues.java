@@ -10,14 +10,8 @@ public class TestDefaultValues {
 	boolean b;
 
 	public String toString() {
-		return "TestClass{" 
-				+ "int=" + i 
-				+ ", double=" + d
-				+ ", float=" + f
-				+ ", char=" + c
-				+ ", String=" + s 
-				+ ", Object=" + o 
-				+ ", boolean=" + b + '}';
+		return "TestClass{" + "int=" + i + ", double=" + d + ", float=" + f + ", char=" + c + ", String=" + s
+				+ ", Object=" + o + ", boolean=" + b + '}';
 	}
 
 	public static void main(String[] args) {

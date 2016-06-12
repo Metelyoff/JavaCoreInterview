@@ -1,4 +1,5 @@
 package multithteads;
+
 import java.util.*;
 
 public class TestJoinClassDemo {
@@ -6,7 +7,8 @@ public class TestJoinClassDemo {
 		Thread threadExample = new Thread(new TestJoinClass());
 		threadExample.start();
 		try {
-			threadExample.join(); //public static void TestClass.main() connect to threadExample and wait it.
+			threadExample.join(); // public static void TestClass.main() connect
+									// to threadExample and wait it.
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

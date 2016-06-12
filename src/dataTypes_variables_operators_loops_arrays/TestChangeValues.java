@@ -33,8 +33,11 @@ public class TestChangeValues {
 		String str2 = str;
 		str2 = testClass.changeStr(str2);
 		int x2 = testClass.changeX(x);
-		System.out.println(value + " " + str + " " + x); //[999] FirstString 2
-		System.out.println(value2 + " " + str2 + " " + x2); //[999] NewString 10
-		System.out.println(value.equals(value2) + " " + str.equals(str2) + " " + (x2 == x)); // true false false
+		System.out.println(value + " " + str + " " + x); // [999] FirstString 2
+		System.out.println(value2 + " " + str2 + " " + x2); // [999] NewString
+															// 10
+		System.out.println(value.equals(value2) + " " + str.equals(str2) + " " + (x2 == x)); // true
+																								// false
+																								// false
 	}
 }

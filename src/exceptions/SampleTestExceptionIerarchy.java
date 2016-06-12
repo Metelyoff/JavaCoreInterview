@@ -1,12 +1,12 @@
 package exceptions;
+
 import java.io.*;
 
-public class SampleTestExceptionIerarchy
-{
-	public static void main(String... args){
+public class SampleTestExceptionIerarchy {
+	public static void main(String... args) {
 		ioExcAndFileNotFoundEx();
 	}
-	
+
 	public static void ioExcAndFileNotFoundEx() {
 		try {
 			String x = "abc";
